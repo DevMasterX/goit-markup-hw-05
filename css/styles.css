@@ -169,20 +169,19 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
-.address-item:not(:last-child) {
-  margin-right: 40px;
+.current {
+  position: relative;
 }
-.address-mail,
-.address-phone {
-  color: var(--primary-text-color);
-  text-decoration: none;
-  font-style: normal;
-  color: inherit;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.current::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  bottom: -1px;
+  background: #404bbf;
+  border-radius: 2px;
 }
-/* ------------------------  - - --------main */
 
 .main-section {
   text-align: center;
